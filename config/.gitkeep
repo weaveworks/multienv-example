@@ -1,0 +1,8 @@
+# This is the directory the Flux daemon will keep an eye on.
+#
+# All Kubernetes manifests Flux should have control over should
+# be kept here.
+#
+# Matching configuration flag for the Flux dameon is
+# --git-path=config
+
