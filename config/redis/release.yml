@@ -7,6 +7,6 @@ metadata:
     chart: redis
 spec:
   chartGitPath: redis
-  releaseName: default
+  releaseName: appv1
   values:
     image: bitnami/redis:4.0.8-r0

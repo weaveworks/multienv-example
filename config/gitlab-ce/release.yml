@@ -7,6 +7,6 @@ metadata:
     chart: gitlab-ce
 spec:
   chartGitPath: gitlab-ce
-  releaseName: default
+  releaseName: devtools-v1
   values:
     image: gitlab/gitlab-ce:10.8.0-ce.0
