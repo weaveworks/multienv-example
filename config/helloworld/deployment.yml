@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: helloworld
 spec:
+  selector:
+    matchLabels:
+      name: helloworld
   minReadySeconds: 5
   replicas: 2
   template:
