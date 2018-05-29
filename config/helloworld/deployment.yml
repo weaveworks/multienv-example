@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld
+  name: appv1-helloworld
 spec:
   selector:
     matchLabels:
-      name: helloworld
+      name: appv1-helloworld
   minReadySeconds: 5
   replicas: 2
   template:
     metadata:
       labels:
-        name: helloworld
+        name: appv1-helloworld
     spec:
       containers:
       - name: helloworld
