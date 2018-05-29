@@ -2,12 +2,11 @@
 apiVersion: helm.integrations.flux.weave.works/v1alpha2
 kind: FluxHelmRelease
 metadata:
-  name: jenkins
+  name: gitlab-ce
   labels:
-    chart: jenkins
+    chart: gitlab-ce
 spec:
-  chartGitPath: jenkins
+  chartGitPath: gitlab-ce
   releaseName: default
   values:
-    image: jenkins/jenkins
-    tag: 2.124-slim
+    image: gitlab/gitlab-ce:10.8.0-ce.0
