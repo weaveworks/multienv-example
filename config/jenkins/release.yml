@@ -10,4 +10,4 @@ spec:
   releaseName: default
   values:
     image: jenkins/jenkins
-    tag: 2.123-slim
+    tag: 2.124-slim
