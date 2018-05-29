@@ -5,6 +5,7 @@ metadata:
   name: jenkins
   labels:
     chart: jenkins
+    env: dev
 spec:
   chartGitPath: jenkins
   releaseName: devtoolsv1
