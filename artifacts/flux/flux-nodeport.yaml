@@ -12,7 +12,7 @@ kind: Service
 metadata:
   name: flux
   labels:
-    env: develop
+    env: dev
 spec:
   type: NodePort
   ports:
@@ -20,4 +20,4 @@ spec:
       targetPort: 3030
   selector:
     name: flux
-    env: develop
+    env: dev
