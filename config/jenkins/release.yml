@@ -1,0 +1,14 @@
+---
+apiVersion: helm.integrations.flux.weave.works/v1alpha2
+kind: FluxHelmRelease
+metadata:
+  name: jenkins
+  labels:
+    chart: jenkins
+    env: dev
+spec:
+  chartGitPath: jenkins
+  releaseName: devtoolsv1
+  values:
+    image: jenkins/jenkins
+    tag: 2.124-slim
