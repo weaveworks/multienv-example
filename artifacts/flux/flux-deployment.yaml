@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         name: flux
-        env: dev
+        env: staging
     spec:
       serviceAccount: flux
       volumes:
@@ -57,8 +57,8 @@ spec:
         # replace (at least) the following URL
         - --git-url=git@github.com:weaveworks/multienv-example
         # the branch and sync-label should be unique for each cluster
-        - --git-branch=develop
-        - --git-label=dev-sync
+        - --git-branch=staging
+        - --git-label=staging-sync
         - --git-path=config
 
         # include these next two to connect to an "upstream" service

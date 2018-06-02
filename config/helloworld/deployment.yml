@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: appv1-helloworld
   labels:
-    env: dev
+    env: staging
 spec:
   selector:
     matchLabels:

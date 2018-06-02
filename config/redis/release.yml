@@ -5,7 +5,7 @@ metadata:
   name: redis
   labels:
     chart: redis
-    env: dev
+    env: staging
 spec:
   chartGitPath: redis
   releaseName: appv1
