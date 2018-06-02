@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: appv1-helloworld
   labels:
-    env: dev
+    env: staging
 spec:
   ports:
     - port: 80
