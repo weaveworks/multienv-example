@@ -1,0 +1,6 @@
+# This directory is reserved for Helm charts required by the Flux Helm
+# operator.
+#
+# The operator should be configured with the --git-charts-path flag set
+# to 'charts' and the --git-branch set to the environment branch.
+

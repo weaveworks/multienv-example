@@ -1,0 +1,13 @@
+---
+apiVersion: helm.integrations.flux.weave.works/v1alpha2
+kind: FluxHelmRelease
+metadata:
+  name: redis
+  labels:
+    chart: redis
+    env: staging
+spec:
+  chartGitPath: redis
+  releaseName: appv1
+  values:
+    image: bitnami/redis:4.0.8-r0

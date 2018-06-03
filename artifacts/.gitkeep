@@ -1,0 +1,7 @@
+# This directory is reserved for Kubernetes manifest like the Flux daemon
+# and the Flux Helm operator. Each branch reflecting an environment should
+# change the configurations of these manifests according to their requirements.
+#
+# For the dameon this would at least be different --git-branch and --git-label
+# flags.
+

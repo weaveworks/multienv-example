@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appv1-helloworld
+  labels:
+    env: staging
+spec:
+  selector:
+    matchLabels:
+      name: appv1-helloworld
+  minReadySeconds: 5
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: appv1-helloworld
+    spec:
+      containers:
+      - name: helloworld
+        image: quay.io/weaveworks/helloworld:master-a000001
+        ports:
+        - containerPort: 80
